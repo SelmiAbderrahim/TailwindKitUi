@@ -6,7 +6,7 @@
 ---
 
 
-[Demo](https://ilyatdo.ml) 
+Components hosted on [ilyatdo.ml](https://ilyatdo.ml).
 
 ![](images/Tailwind-Css-UI-Kit.png)
 
