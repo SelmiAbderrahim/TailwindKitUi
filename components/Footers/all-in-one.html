@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All in one footer</title>
+    <link rel="stylesheet" href="../../src/styles.css" />
+  </head>
+  <body
+    class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black"
+  >
+    <button
+      onclick="changeTheme('code-preview-{{ component.id }}');"
+      aria-label="dark mode button"
+      class="transition-colors focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 hover:bg-gray-400 absolute top-2 right-2"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-6 h-6 dark-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        ></path>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 light-icon hidden"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+    </button>
+
+    <!--COMPONENT START-->
+
+    <footer class="py-16 bg-white lg:py-24 dark:bg-gray-800">
+      <div class="px-4 mx-auto max-w-screen-xl lg:px-12">
+        <div class="grid gap-12 lg:grid-cols-6 lg:gap-24">
+          <div class="col-span-2">
+            <a href="https://Brand.com" class="flex mb-6"
+              ><img
+                src="https://img.icons8.com/emoji/48/000000/umbrella-with-rain-drops.png"
+                class="mr-3 h-8"
+                alt="Brand Logo"
+              /><span
+                class="self-center text-2xl font-semibold text-gray-900 dark:text-white"
+                >Brand</span
+              ></a
+            >
+            <p class="text-gray-600 dark:text-gray-400">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis earum sequi tempore quam similique suscipit? Numquam dolor ex alias dignissimos velit accusamus. Odit, autem repudiandae.
+            </p>
+          </div>
+          <div>
+            <h3
+              class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white"
+            >
+              Resources
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://www.figma.com/?ref=Brand.com"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >CSS</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://tailwindcss.com/?ref=Brand.com"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Bootstrap</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://themesberg.com/blog?ref=Brand.com"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white"
+            >
+              Help &amp; support
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://themesberg.com/contact?ref=Brand.com"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://themesberg.com/knowledge-center?ref=Brand.com"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Knowledge Center</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white"
+            >
+              Follow us
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href=""
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Github</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href=""
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href=""
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Facebook</a
+                >
+              </li>
+
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white"
+            >
+              Legal
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://themesberg.com/privacy-policy"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://themesberg.com/terms-and-conditions"
+                  rel="noreferrer nofollow"
+                  class="font-normal text-gray-600 dark:text-gray-400 dark:hover:text-white hover:underline"
+                  >Terms &amp; Conditions</a
+                >
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12" />
+        <span class="block text-center text-gray-600 dark:text-gray-400 font-"
+          >© 2022
+          <a href="">Brand™</a>. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <!--COMPONENT END-->
+  </body>
+
+  <script src="../../src/scripts.js"></script>
+</html>

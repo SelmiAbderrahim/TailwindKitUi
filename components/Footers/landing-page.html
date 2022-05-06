@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page footer</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black">
+    <button onclick="changeTheme('code-preview-{{ component.id }}');" aria-label="dark mode button"  class="transition-colors  focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 hover:bg-gray-400 absolute top-2 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark-icon"><path  stroke-linecap="round"  stroke-linejoin="round"  stroke-width="2"  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 light-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+    </button>
+    
+    <!--COMPONENT START-->
+
+
+    <footer class="w-full">
+        <div class="px-3 sm:px-5">
+            <div class="min-w-full mx-auto bg-white dark:bg-gray-700 p-1">  
+
+                <div class="md:flex md:justify-center py-12 border-t border-gray-200">
+            
+                    <div class="md:flex-grow mb-8 md:mb-0">
+                        <a class="inline-block" href="https://cruip.com/" rel="home" style="outline: currentcolor none medium;">
+						    <span class="sr-only">Brand</span>
+                                <img src="https://img.icons8.com/emoji/48/000000/umbrella-with-rain-drops.png" class="w-8 h-8" alt="">    
+                             </a>
+                        <div class="text-gray-600 dark:text-gray-100 text-sm">
+                            <div>© 2022 Brand.</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-grow -m-4 md:m-0 md:table">
+
+                        <div class="w-1/2 md:w-auto md:table-cell p-4 md:py-0 md:px-4 lg:px-10">
+                            <h6 class="text-xs text-gray-700 dark:text-gray-300 font-semibold uppercase mb-3">Navigation</h6>
+                            <ul class="text-sm">
+                                <li class="mb-2 flex items-center">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline mr-2" href="https://cruip.com/affiliate-program/" style="outline: currentcolor none medium;">Affiliate Program</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="https://cruip.com/about-us/" style="outline: currentcolor none medium;">About us</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="https://cruip.com/terms/" style="outline: currentcolor none medium;">Terms &amp; License</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="https://cruip.com/privacy-policy/" style="outline: currentcolor none medium;">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+             
+                        <div class="w-1/2 md:w-auto md:table-cell p-4 md:py-0 md:px-4 lg:px-10 lg:pr-0">
+                            <h6 class="text-xs text-gray-700 dark:text-gray-300 font-semibold uppercase mb-3">Contacts</h6>
+                            <ul class="text-sm">
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="" target="_blank" style="outline: currentcolor none medium;">Twitter</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="" target="_blank" style="outline: currentcolor none medium;">Facebookr</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="" target="_blank" style="outline: currentcolor none medium;">YouTube</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="text-gray-600 dark:text-gray-100 hover:underline" href="" target="_blank" style="outline: currentcolor none medium;">Email</a>
+                                </li>
+                            </ul>
+                        </div>                 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!--COMPONENT END-->
+    
+</body>
+
+<script src="../../src/scripts.js"></script>
+</html>
+    

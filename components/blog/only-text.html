@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog list (only text)</title>
+    <link rel="stylesheet" href="../../src/styles.css" />
+  </head>
+  <body
+    class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black"
+  >
+    <button
+      onclick="changeTheme('code-preview-{{ component.id }}');"
+      aria-label="dark mode button"
+      class="transition-colors focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 dark:text-gray-100 dark:text-gray-400 hover:bg-gray-400 absolute top-2 right-2"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="w-6 h-6 dark-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        ></path>
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 light-icon hidden"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+    </button>
+
+    <!--COMPONENT START-->
+
+    <div
+      class="px-4 py-16 sm:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-white dark:bg-gray-700 dark:text-gray-100 rounded mx-4"
+    >
+      <div class="mb-10">
+
+
+        <div class="grid py-8 sm:grid-cols-4">
+          <div class="mb-4 sm:mb-0">
+            <div
+              class="space-y-1 text-xs font-semibold flex items-center flex-row sm:flex-col sm:justify-start justify-between"
+            >
+              <a
+                href="/"
+                class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 inline-flex items-center gap-2"
+                aria-label="Category"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Category
+              </a>
+              <p class="text-gray-600 dark:text-gray-300 inline-flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                5 Aug 2019
+              </p>
+            </div>
+          </div>
+          <div class="sm:col-span-3 lg:col-span-2">
+            <div class="mb-3">
+              <a
+                href="/"
+                aria-label="Article"
+                class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+              >
+                <p
+                  class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl dark:text-gray-100"
+                >
+                  Article title
+                </p>
+              </a>
+            </div>
+            <p class="text-gray-700 dark:text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              beatae modi, est placeat vel cumque numquam, dolor dolorum nihil
+              earum sed eaque enim reprehenderit iure?
+            </p>
+          </div>
+        </div>
+
+        <div class="grid py-8 sm:grid-cols-4">
+          <div class="mb-4 sm:mb-0">
+            <div
+              class="space-y-1 text-xs font-semibold flex items-center flex-row sm:flex-col sm:justify-start justify-between"
+            >
+              <a
+                href="/"
+                class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 inline-flex items-center gap-2"
+                aria-label="Category"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Category
+              </a>
+              <p class="text-gray-600 dark:text-gray-300 inline-flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                5 Aug 2019
+              </p>
+            </div>
+          </div>
+          <div class="sm:col-span-3 lg:col-span-2">
+            <div class="mb-3">
+              <a
+                href="/"
+                aria-label="Article"
+                class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+              >
+                <p
+                  class="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl dark:text-gray-100"
+                >
+                  Article title
+                </p>
+              </a>
+            </div>
+            <p class="text-gray-700 dark:text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              beatae modi, est placeat vel cumque numquam, dolor dolorum nihil
+              earum sed eaque enim reprehenderit iure?
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-left">
+        <a
+          href="/"
+          aria-label=""
+          class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+        >
+          See all articles
+          <svg
+            class="inline-block w-3 ml-2"
+            fill="currentColor"
+            viewBox="0 0 12 12"
+          >
+            <path
+              d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!--COMPONENT END-->
+  </body>
+
+  <script src="../../src/scripts.js"></script>
+</html>

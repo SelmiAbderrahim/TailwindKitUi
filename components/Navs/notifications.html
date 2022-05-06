@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-7">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications navbar</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black">
+    <button onclick="changeTheme('code-preview-{{ component.id }}');" aria-label="dark mode button"  class="transition-colors  focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 dark:text-white hover:bg-gray-400 absolute top-2 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark-icon"><path  stroke-linecap="round"  stroke-linejoin="round"  stroke-width="2"  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 light-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+    </button>
+    
+    <!--COMPONENT START-->
+
+     
+    
+   
+    <div class="2xl:container 2xl:mx-auto w-screen mx-12 py-24"> <!--remove mx-12 py-24-->
+        <div class="bg-white dark:bg-gray-700  rounded shadow-lg py-5 px-7">
+            <nav class="flex justify-between">
+                <div class="flex items-center space-x-1 sm:space-x-3 lg:pr-16 pr-6">
+                    <img class="cursor-pointer dark:bg-white p-1 rounded-full w-12 sm:w-16" src="https://cdn-icons-png.flaticon.com/512/4359/4359696.png" alt="logo" />                       
+                    <h2 class="font-normal text-xs sm:text-2xl leading-6 text-gray-800 dark:text-white ">SnowMan</h2>
+                </div> 
+
+                <!-- For medium and plus sized devices -->
+                <ul class="hidden md:flex flex-auto space-x-2 items-center">
+                    <li class="text-gray-600 dark:text-gray-100 border border-white bg-gray-50 dark:bg-gray-800 cursor-pointer p-2 font-normal text-xs shadow rounded text-center align-middle">Home</li>
+                    <li class="text-gray-600 dark:text-gray-100 border border-white bg-gray-50 dark:bg-gray-800 cursor-pointer p-2 font-normal text-xs shadow rounded text-center align-middle">Features</li>
+                    <li class="text-gray-600 dark:text-gray-100 border border-white bg-gray-50 dark:bg-gray-800 cursor-pointer p-2 font-normal text-xs shadow rounded text-center align-middle">About</li>
+                    <li class="text-gray-600 dark:text-gray-100 border border-white bg-gray-50 dark:bg-gray-800 cursor-pointer p-2 font-normal text-xs shadow rounded text-center align-middle">Contact</li>
+                </ul>
+                <div class=" flex space-x-2 sm:space-x-5 justify-center  items-center pl-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                      </svg>
+                    <div class="relative dark:text-white rounded cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 ">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg>
+                        <div class="animate-ping w-1.5 h-1.5 bg-orange-700 rounded-full absolute -top-1 -right-1 m-auto duration-200"></div>
+                        <div class=" w-1.5 h-1.5 bg-orange-700 rounded-full absolute -top-1 -right-1 m-auto shadow-lg"></div>
+                    </div>
+                    
+                </div>
+            </nav>
+   
+
+            <div class="block md:hidden w-full mt-5 ">
+                <button onclick="document.getElementById('mobile-navigation-menu-255').classList.toggle('hidden');" class="cursor-pointer px-4 py-3 text-white bg-orange-600 rounded flex justify-between items-center w-full">
+                    <div class="flex space-x-2">
+                        <p id="textClicked" class="font-normal text-sm leading-3 focus:outline-none duration-100 cursor-pointer ">Menu</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                 </button>
+                <div class=" relative hidden" id="mobile-navigation-menu-255">
+                    <ul id="list" class="font-normal text-base leading-4 absolute top-2  w-full rounded shadow-md">
+                        <li class="px-4 py-3 text-gray-600 bg-gray-50 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-gray-100 duration-100 cursor-pointer text-xs leading-3 font-normal">
+                            Home
+                        </li>
+                        <li class="px-4 py-3 text-gray-600 bg-gray-50 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-gray-100 duration-100 cursor-pointer text-xs leading-3 font-normal">
+                            Features
+                        </li>
+                        <li class="px-4 py-3 text-gray-600 bg-gray-50 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-gray-100 duration-100 cursor-pointer text-xs leading-3 font-normal">
+                            About
+                        </li>
+                        <li class="px-4 py-3 text-gray-600 bg-gray-50 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-gray-100 duration-100 cursor-pointer text-xs leading-3 font-normal">
+                            Contact
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+
+        
+
+    <!--COMPONENT END-->
+    
+</body>
+
+<script src="../../src/scripts.js"></script>
+</html>
+    

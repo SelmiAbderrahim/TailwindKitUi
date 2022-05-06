@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-7">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe (banner)</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black">
+    <button onclick="changeTheme('code-preview-{{ component.id }}');" aria-label="dark mode button"  class="transition-colors  focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 dark:text-white hover:bg-gray-400 absolute top-2 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark-icon"><path  stroke-linecap="round"  stroke-linejoin="round"  stroke-width="2"  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 light-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+    </button>
+    
+    <!--COMPONENT START-->
+
+     
+    <div class="col-span-full order-3 relative">
+        <div class="absolute inset-0 border-2 border-gray-900 dark:border-gray-200 rounded transform rotate-3 -z-1" aria-hidden="true"></div>
+        <div class="relative bg-gray-300 text-gray-900 dark:bg-gray-700 dark:text-gray-100 rounded text-center px-8 py-8 md:px-10 md:py-14">
+            <div class="flex flex-col lg:flex-row justify-between items-center">            
+                <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
+                    <h3 class="h5 ">Subscribe and get free E-book now!</h3>
+                </div>
+                <div>
+                    <form class="subscribe-form">
+                        <div class="flex flex-wrap">
+                            <div class="relative w-full">
+                                <label class="block text-sm sr-only" for="newsletter">Email</label>
+                                <div class="relative flex items-center max-w-xs">
+                                    <input id="newsletter" type="email" class="subscribe-email rounded w-full text-gray-800 px-4 py-3 pr-10 text-sm" style="min-width: 280px; outline: currentcolor none medium;" name="email" value="" placeholder="Your email address" required="">
+                                    <button type="submit" class="absolute inset-0 left-auto" aria-label="Subscribe" data-nonce="63df06dcab" data-post_id="63023" style="outline: currentcolor none medium;">
+                                        <svg class="w-3 h-3 fill-current text-indigo-500 mx-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fill-rule="nonzero"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="absolute">
+                                    <div class="subscribe-msg subscribe-error text-sm text-red-400 mt-2 hidden"></div>
+                                    <div class="subscribe-msg subscribe-success text-sm text-green-400 mt-2 hidden"></div>
+                                </div>
+                            </div>
+                        </div> 
+                    </form>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+        
+
+    <!--COMPONENT END-->
+    
+</body>
+
+<script src="../../src/scripts.js"></script>
+</html>
+    

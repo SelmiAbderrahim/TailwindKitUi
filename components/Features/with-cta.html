@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features with call to action</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black">
+    <button onclick="changeTheme('code-preview-{{ component.id }}');" aria-label="dark mode button"  class="transition-colors  focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 hover:bg-gray-400 absolute top-2 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark-icon"><path  stroke-linecap="round"  stroke-linejoin="round"  stroke-width="2"  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 light-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+    </button>
+    
+    <!--COMPONENT START-->
+
+    <div class="relative z-20 p-4 lg:p-24 drop-shadow-blue dark:text-gray-100">
+        <div class="flex flex-col w-full max-w-screen-xl mx-auto">
+            <h3 class="mt-12 lg:mt-0 font-hwt-artz text-4xl text-teal lg:text-turquoise text-center tracking-wide">Our
+                services</h3>
+            <div>
+
+                <div class="alternate mt-16 lg:mt-8 flex flex-col lg:flex-row w-full">
+                    <div class="flex center lg:w-1/2">
+                        <div class="relative ">
+                            <img
+                                src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="w-full h-auto object-contain rounded shadow-lg" alt="">
+                            </div>
+                    </div>
+                    <div class="lg:w-1/2 p-4 lg:p-8 alternate-order">
+                        <h4 class="lg:mt-8 font-hwt-artz text-2xl text-black-on-color tracking-wide">Our support</h4>
+                        <div class="mt-2 text-sm text-gray-on-color leading-snug hyphenate redactor">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero culpa saepe quibusdam? Libero, perspiciatis laudantium quibusdam veniam, error qui cupiditate nihil eum aliquam esse fuga.</p>
+                        </div>
+                        <div class="mt-4"><a
+                                class="inline-flex center font-hwt-artz text-sm text-turquoise tracking-wide opacity-75  hover:animate hover:jello whitespace-no-wrap"
+                                href="">Learn
+                                more<img src="https://img.icons8.com/carbon-copy/100/000000/arrow.png" alt=""
+                                    class="h-4 mt-1 w-auto ml-1 object-contain dark:bg-gray-200 rounded"></a></div>
+                    </div>
+                </div>
+                <div class="alternate mt-16 lg:mt-8 flex flex-col lg:flex-row w-full">
+                    <div class="flex center lg:w-1/2">
+                        <div class="relative ">
+                            <img
+                                src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="w-full h-auto object-contain rounded shadow-lg" alt="">
+                            </div>
+                    </div>
+                    <div class="lg:w-1/2 p-4 lg:p-8 alternate-order">
+                        <h4 class="lg:mt-8 font-hwt-artz text-2xl text-black-on-color tracking-wide">Our support</h4>
+                        <div class="mt-2 text-sm text-gray-on-color leading-snug hyphenate redactor">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero culpa saepe quibusdam? Libero, perspiciatis laudantium quibusdam veniam, error qui cupiditate nihil eum aliquam esse fuga.</p>
+                        </div>
+                        <div class="mt-4"><a
+                                class="inline-flex center font-hwt-artz text-sm text-turquoise tracking-wide opacity-75  hover:animate hover:jello whitespace-no-wrap"
+                                href="">Learn
+                                more<img src="https://img.icons8.com/carbon-copy/100/000000/arrow.png" alt=""
+                                    class="h-4 mt-1 w-auto ml-1 object-contain dark:bg-gray-200 rounded"></a></div>
+                    </div>
+                </div>
+                <div class="alternate mt-16 lg:mt-8 flex flex-col lg:flex-row w-full">
+                    <div class="flex center lg:w-1/2">
+                        <div class="relative ">
+                            <img
+                                src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="w-full h-auto object-contain rounded shadow-lg" alt="">
+                            </div>
+                    </div>
+                    <div class="lg:w-1/2 p-4 lg:p-8 alternate-order">
+                        <h4 class="lg:mt-8 font-hwt-artz text-2xl text-black-on-color tracking-wide">Our support</h4>
+                        <div class="mt-2 text-sm text-gray-on-color leading-snug hyphenate redactor">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero culpa saepe quibusdam? Libero, perspiciatis laudantium quibusdam veniam, error qui cupiditate nihil eum aliquam esse fuga.</p>
+                        </div>
+                        <div class="mt-4"><a
+                                class="inline-flex center font-hwt-artz text-sm text-turquoise tracking-wide opacity-75  hover:animate hover:jello whitespace-no-wrap"
+                                href="">Learn
+                                more<img src="https://img.icons8.com/carbon-copy/100/000000/arrow.png" alt=""
+                                    class="h-4 mt-1 w-auto ml-1 object-contain dark:bg-gray-200 rounded"></a></div>
+                    </div>
+                </div>
+                <div class="alternate mt-16 lg:mt-8 flex flex-col lg:flex-row w-full">
+                    <div class="flex center lg:w-1/2">
+                        <div class="relative ">
+                            <img
+                                src="https://images.pexels.com/photos/668196/pexels-photo-668196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="w-full h-auto object-contain rounded shadow-lg" alt="">
+                            </div>
+                    </div>
+                    <div class="lg:w-1/2 p-4 lg:p-8 alternate-order">
+                        <h4 class="lg:mt-8 font-hwt-artz text-2xl text-black-on-color tracking-wide">Our support</h4>
+                        <div class="mt-2 text-sm text-gray-on-color leading-snug hyphenate redactor">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero culpa saepe quibusdam? Libero, perspiciatis laudantium quibusdam veniam, error qui cupiditate nihil eum aliquam esse fuga.</p>
+                        </div>
+                        <div class="mt-4"><a
+                                class="inline-flex center font-hwt-artz text-sm text-turquoise tracking-wide opacity-75  hover:animate hover:jello whitespace-no-wrap"
+                                href="">Learn
+                                more<img src="https://img.icons8.com/carbon-copy/100/000000/arrow.png" alt=""
+                                    class="h-4 mt-1 w-auto ml-1 object-contain dark:bg-gray-200 rounded"></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--COMPONENT END-->
+    
+</body>
+
+<script src="../../src/scripts.js"></script>
+</html>
+    

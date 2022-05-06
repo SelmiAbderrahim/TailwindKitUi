@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social share buttons</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen relative dark:bg-black">
+    <button onclick="changeTheme('code-preview-{{ component.id }}');" aria-label="dark mode button"  class="transition-colors  focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 hover:bg-gray-400 absolute top-2 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark-icon"><path  stroke-linecap="round"  stroke-linejoin="round"  stroke-width="2"  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 light-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+    </button>
+
+    <!--COMPONENT START-->
+    <div class="flex items-center justify-center gap-4 border-2 border-black rounded dark:bg-white">
+        <div class="relative flex justify-center group">
+            <div class="absolute w-24 text-xs sm:text-sm md-text-base  text-center -top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white bg-blue-600 p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                Facebook
+            </div>
+            <button class="p-2 border-transparent group-hover:border-blue-600 border-b-4">
+                <svg class="w-6 h-6 sm:w-12 sm:h-12" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    viewBox="0 0 30 30">    
+                    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="relative flex justify-center group">
+            <div class="absolute w-24 text-xs sm:text-sm md-text-base  text-center -top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white bg-cyan-600 p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                Twitter
+            </div>
+            <button class="p-2 border-transparent group-hover:border-b-cyan-600 border-b-4">
+                <svg class="w-6 h-6 sm:w-12 sm:h-12" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    viewBox="0 0 30 30"
+                    style=" fill:#000000;">    <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path>
+                    </svg>
+            </button>
+        </div>
+
+        <div class="relative flex justify-center group">
+            <div class="absolute w-24 text-xs sm:text-sm md-text-base  text-center -top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white bg-red-600 p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                YouTube
+            </div>
+            <button class="p-2 border-transparent group-hover:border-b-red-600 border-b-4">
+                <svg class="w-6 h-6 sm:w-12 sm:h-12" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    viewBox="0 0 30 30"
+                    style=" fill:#000000;">    <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="relative flex justify-center group">
+            <div class="absolute -top-1/2 w-24 text-xs sm:text-sm md-text-base text-center left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white bg-green-600 p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out">
+                Line
+            </div>
+            <button class="p-2 border-transparent group-hover:border-b-green-600 border-b-4">
+                <svg class="w-6 h-6 sm:w-12 sm:h-12" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                viewBox="0 0 30 30"
+                style=" fill:#000000;">    <path d="M 6 4 C 4.895 4 4 4.895 4 6 L 4 24 C 4 25.105 4.895 26 6 26 L 24 26 C 25.105 26 26 25.105 26 24 L 26 6 C 26 4.895 25.105 4 24 4 L 6 4 z M 15.003906 7.6660156 C 19.720906 7.6660156 23.558594 10.780375 23.558594 14.609375 C 23.558594 16.142375 22.964609 17.523813 21.724609 18.882812 C 19.929609 20.948812 15.916906 23.464609 15.003906 23.849609 C 14.091906 24.233609 14.225719 23.604672 14.261719 23.388672 C 14.283719 23.260672 14.384766 22.65625 14.384766 22.65625 C 14.413766 22.43725 14.442469 22.099812 14.355469 21.882812 C 14.258469 21.645813 13.880563 21.520937 13.601562 21.460938 C 9.4895625 20.916937 6.4472656 18.041375 6.4472656 14.609375 C 6.4472656 10.781375 10.286906 7.6660156 15.003906 7.6660156 z M 12.626953 12.910156 C 12.375953 12.910156 12.171875 13.107656 12.171875 13.347656 L 12.171875 16.652344 C 12.171875 16.894344 12.375953 17.089844 12.626953 17.089844 C 12.877953 17.089844 13.082031 16.893344 13.082031 16.652344 L 13.082031 13.347656 C 13.082031 13.107656 12.877953 12.910156 12.626953 12.910156 z M 14.5625 12.910156 C 14.5175 12.910156 14.470781 12.915641 14.425781 12.931641 C 14.248781 12.991641 14.128906 13.157703 14.128906 13.345703 L 14.128906 16.650391 C 14.128906 16.892391 14.3225 17.089844 14.5625 17.089844 C 14.8025 17.089844 14.996094 16.890391 14.996094 16.650391 L 14.996094 14.605469 L 16.679688 16.914062 C 16.760687 17.024063 16.889391 17.089844 17.025391 17.089844 C 17.072391 17.089844 17.118109 17.082406 17.162109 17.066406 C 17.340109 17.006406 17.460938 16.840344 17.460938 16.652344 L 17.457031 16.652344 L 17.457031 13.347656 C 17.457031 13.107656 17.263391 12.910156 17.025391 12.910156 C 16.787391 12.910156 16.591797 13.107656 16.591797 13.347656 L 16.591797 15.392578 L 14.908203 13.085938 C 14.827203 12.975938 14.6985 12.910156 14.5625 12.910156 z M 18.929688 12.910156 C 18.678688 12.910156 18.474609 13.107656 18.474609 13.347656 L 18.474609 14.998047 L 18.474609 15 L 18.474609 16.650391 C 18.474609 16.892391 18.678687 17.089844 18.929688 17.089844 L 20.654297 17.089844 C 20.906297 17.089844 21.111328 16.892344 21.111328 16.652344 C 21.111328 16.412344 20.905297 16.216797 20.654297 16.216797 L 19.384766 16.216797 L 19.384766 15.435547 L 20.654297 15.435547 C 20.906297 15.435547 21.111328 15.24 21.111328 15 C 21.111328 14.758 20.905297 14.5625 20.654297 14.5625 L 19.384766 14.564453 L 19.384766 13.783203 L 20.654297 13.783203 C 20.906297 13.783203 21.111328 13.588656 21.111328 13.347656 C 21.111328 13.107656 20.905297 12.910156 20.654297 12.910156 L 18.929688 12.910156 z M 9.34375 12.912109 C 9.09275 12.912109 8.8886719 13.106656 8.8886719 13.347656 L 8.8886719 16.652344 C 8.8886719 16.894344 9.09275 17.089844 9.34375 17.089844 L 11.068359 17.089844 C 11.320359 17.089844 11.522438 16.893297 11.523438 16.654297 C 11.523437 16.414297 11.319359 16.21875 11.068359 16.21875 L 9.7988281 16.21875 L 9.7988281 13.347656 C 9.7988281 13.107656 9.59475 12.912109 9.34375 12.912109 z"></path>
+            </svg>
+            </button>
+        </div>
+
+
+    </div>
+    <!--COMPONENT END-->
+    
+</body>
+
+<script src="../../src/scripts.js"></script>
+</html>

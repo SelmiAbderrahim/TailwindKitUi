@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient hero</title>
+    <link rel="stylesheet" href="../../src/styles.css">
+</head>
+<body class="bg-gray-200 flex justify-center items-center min-h-screen relative dark:bg-black">
+    <button onclick="changeTheme('code-preview-{{ component.id }}');" aria-label="dark mode button"  class="transition-colors  focus:bg-gray-400 duration-200 ease-in-out p-1 text-gray-200 bg-gray-600 rounded-md hover:text-gray-700 hover:bg-gray-400 absolute top-2 right-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark-icon"><path  stroke-linecap="round"  stroke-linejoin="round"  stroke-width="2"  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 light-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+    </button>
+    
+    <!--COMPONENT START-->
+
+        <div class="text-black">
+            <div class="mb-8 lg:mb-28">
+                <div class="w-full px-4 md:px-4 mx-auto box-content ">
+                    <header class="flex flex-wrap items-center justify-between py-4 md:py-10 bg-slate-700 text-white">
+                        <div><a class="inline-block" href="index.html"><svg width="156" viewBox="0 0 3548 751"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M1706 739c116 0 208-37 285-115V327h-302v102h195v147c-51 38-105 56-174 56-150 0-246-100-246-259 0-153 102-255 253-255 71 0 134 25 188 70l65-86c-64-54-152-92-254-92-217 0-370 152-370 367 0 219 144 362 360 362zm614-4c72 0 132-30 164-91h3c-3 29-3 55-3 81h103V231h-112v260c0 83-54 145-130 145s-123-53-123-139V231h-112v269c0 143 81 235 210 235zm593 4c122 0 203-63 203-156 0-92-56-135-200-154-66-8-93-26-93-61s32-56 87-56c44 0 98 14 147 39l35-86c-52-28-116-44-179-44-119 0-199 60-199 149 0 83 66 134 191 147 70 7 101 27 101 64s-36 62-91 62c-58 0-115-16-176-49l-46 85c74 41 143 60 220 60zm524-7c41 0 73-7 111-24l-31-89c-20 10-42 16-62 16-47 0-69-28-69-82V324h142v-93h-142V90l-111 12v129h-93v93h93v232c0 115 58 176 162 176z"
+                                            fill="#fff" fill-rule="nonzero"></path>
+                                        <path
+                                            d="M0 431.986C0 330.588 44.234 187.646 135.261 96.06c91.026-91.584 328.598-141.725 529.58-36.62 200.983 105.103 335.347 0 407.648-23.865 43.104 139.838 33.216 244.84-27.731 331.388-60.947 86.548-287.023 171.191-537.977 35.422C355.518 320.55 190.944 236.713 0 431.986z"
+                                            fill="#fff"></path>
+                                        <path
+                                            d="M10.71 708.858C-5.475 638.803-9.133 564.618 42.062 499.13c71.746-89.122 251.021-119.087 359.317-47.593 108.296 71.493 217.05 113.546 250.784 113.546 8.52 71.56-72.981 167.174-136.065 179.888-63.084 12.713-128.922 5.68-205.03-24.804-76.108-30.484-133.948-128.102-300.356-11.309z"
+                                            fill="#fff"></path>
+                                    </g>
+                                </svg></a></div>
+                        <div class="w-full mt-4 space-x-4 text-lg font-bold md:text-right md:mt-0 md:w-auto"><a
+                                href="docs/getting-started.html">Docs</a><a href="https://community.getgust.com/">Support</a><a
+                                href="https://getgust.onfastspring.com/account">Account</a><a
+                                class="inline-block relative appearance-none hover:opacity-80 text-center  md:hidden "
+                                href="pricing">Pricing</a><a
+                                class="inline-block relative appearance-none hover:opacity-80 text-center bg-white text-primary border-white py-3.5 border-2 rounded label px-3.5 hidden md:inline"
+                                href="pricing">Pricing</a>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <div class="max-w-screen-xl px-4 md:px-4 mx-auto box-content ">
+                <h1 class="mb-4 md:mb-10 heading-900">Gust is a Tailwind CSS theme for WordPress.</h1>
+                <p class="mb-8 text-blue-700 p-900 lg:w-7/12">Leverage the power of Tailwind CSS and Wordpress to make your
+                    website come to life faster.</p>
+                <div class="flex flex-wrap items-center mb-24">
+                    <div class="w-full mb-6 sm:w-auto sm:mb-0 sm:mr-6"><a
+                            class="inline-block relative appearance-none hover:opacity-80 text-center bg-white text-primary border-white py-3.5 border-2 rounded label px-3.5 "
+                            href="pricing">See Pricing<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                fill="currentColor" viewBox="0 0 256 256" class="inline ml-1">
+                                <rect width="256" height="256" fill="none"></rect>
+                                <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                <polyline points="144 56 216 128 144 200" fill="none" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                            </svg></a></div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute bottom-0 left-0 w-full top-1/2"><svg preserveAspectRatio="none" viewBox="0 0 100 100"
+                        class="w-full h-full">
+                        <polygon points="0,0 0,100 100,100" opacity="1" fill="#fff"></polygon>
+                    </svg></div>
+                <div class="max-w-screen-xl px-4 md:px-4 mx-auto box-content relative z-10">
+                    <div class="text-blue-900 bg-blue-100 rounded-md py-14 ">
+                        <h2 class="mb-8 text-center heading-750">Why Gust?</h2>
+                        <div class="grid w-10/12 grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-4 md:gap-14">
+                            <div>
+                                <div class="opacity-80"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 54"
+                                        width="24">
+                                        <g clip-path="url(#prefix__clip0)" style="transform:translateY(11px)">
+                                            <path fill="currentColor" fill-rule="evenodd"
+                                                d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                                                clip-rule="evenodd"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="prefix__clip0">
+                                                <path fill="#fff" d="M0 0h54v32.4H0z"></path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg></div>
+                                <h3 class="my-2 heading-600">Tailwind CSS</h3>
+                                <p class="my-2 p-500">All the Tailwind CSS essentials, finally in WordPress.</p><a
+                                    class="inline-block relative appearance-none hover:opacity-80 text-center  text-secondary"
+                                    href="index.html#section-tailwind">Learn more<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="inline ml-1">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        <polyline points="144 56 216 128 144 200" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                                    </svg></a>
+                            </div>
+                            <div>
+                                <div class="opacity-80"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <rect x="44" y="44" width="168" height="168" rx="8" stroke-width="24"
+                                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                        </rect>
+                                        <line x1="128" y1="44" x2="128" y2="212" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        <line x1="139.99414" y1="44" x2="212" y2="116.00586" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        <line x1="127.99998" y1="88.00584" x2="212" y2="172.00586" fill="none"
+                                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="24"></line>
+                                        <line x1="127.99998" y1="144.00584" x2="195.99414" y2="212" fill="none"
+                                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="24"></line>
+                                    </svg></div>
+                                <h3 class="my-2 heading-600">Build Anything</h3>
+                                <p class="my-2 p-500">Gust is extremely flexible and can be configured to suit any design
+                                    system.</p><a
+                                    class="inline-block relative appearance-none hover:opacity-80 text-center  text-secondary"
+                                    href="index.html#section-build-anything">Learn more<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="inline ml-1">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        <polyline points="144 56 216 128 144 200" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                                    </svg></a>
+                            </div>
+                            <div>
+                                <div class="opacity-80"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <polygon
+                                            points="96 239.992 112 159.992 48 135.992 160 15.992 144 95.992 208 119.992 96 239.992"
+                                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="24"></polygon>
+                                    </svg></div>
+                                <h3 class="my-2 heading-600">Performance</h3>
+                                <p class="my-2 p-500">Tiny assets equal quicker load times. Gust has performance baked in.</p><a
+                                    class="inline-block relative appearance-none hover:opacity-80 text-center  text-secondary"
+                                    href="index.html#section-performance">Learn more<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="inline ml-1">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        <polyline points="144 56 216 128 144 200" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                                    </svg></a>
+                            </div>
+                            <div>
+                                <div class="opacity-80"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        fill="currentColor" viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <polyline points="40 64 112 128 40 192" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                                        <line x1="119.99414" y1="192" x2="215.99414" y2="192" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                    </svg></div>
+                                <h3 class="my-2 heading-600">Developer Tools</h3>
+                                <p class="my-2 p-500">Work with the tools you need to make WP development a breeze.</p><a
+                                    class="inline-block relative appearance-none hover:opacity-80 text-center  text-secondary"
+                                    href="index.html#section-developers">Learn more<svg xmlns="http://www.w3.org/2000/svg"
+                                        width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" class="inline ml-1">
+                                        <rect width="256" height="256" fill="none"></rect>
+                                        <line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                        <polyline points="144 56 216 128 144 200" fill="none" stroke="currentColor"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--COMPONENT END-->
+    
+</body>
+
+<script src="../../src/scripts.js"></script>
+</html>
+    

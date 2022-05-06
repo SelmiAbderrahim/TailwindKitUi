@@ -1,0 +1,24 @@
+{
+  "name": "selmikitui",
+  "version": "0.0.1",
+  "description": "Tailwind CSS components from selmi.tech",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "npx tailwindcss -i ./src/input.css -o ./src/styles.css --watch",
+    "build": "npx tailwindcss -o ./src/styles.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SelmiAbderrahim/Selmi-Tailwind-UI-Kit.git"
+  },
+  "keywords": [
+    "tailwind",
+    "components"
+  ],
+  "author": "Selmi Abderrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SelmiAbderrahim/Selmi-Tailwind-UI-Kit/issues"
+  },
+  "homepage": "https://github.com/SelmiAbderrahim/Selmi-Tailwind-UI-Kit#readme"
+}
